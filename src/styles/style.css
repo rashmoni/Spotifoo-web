@@ -1,0 +1,32 @@
+@import "./variables.css";
+@import "./fonts.css";
+
+body {
+  margin: 0;
+}
+
+.nav-bar{
+  background-color: black;
+  position: relative;
+  width: 200px;
+  height: 720px;
+}
+
+.App {
+  background-color: black;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 1500px;
+}
+
+.logo {
+  width: 117px;
+  position: absolute;
+ left: 16%;
+ right: 25.33%;
+ top: 4.44%;
+ bottom: 91.11%;
+}

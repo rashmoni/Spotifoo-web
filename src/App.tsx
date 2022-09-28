@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Node modules
+import { useState } from "react";
 
-function App() {
+// Project files
+import Card from "./components/Card";
+import Countries from "./data/countries.json";
+import Logo from "./assets/logo-spotifoo.png";
+import LoginForm from "./components/LoginForm";
+import "./styles/style.css";
+
+export default function App() {
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <nav className="nav-bar">
+    <img className="logo" src={Logo} />
+    </nav>
+    <p>Hello World</p>
+    <p>This is Rashmoni</p>
     </div>
   );
 }
-
-export default App;

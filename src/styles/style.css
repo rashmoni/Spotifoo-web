@@ -3,11 +3,17 @@
 
 body {
   margin: 0;
+  background-color: var(--gray-dark);
 }
 
 .nav-bar{
   background-color: black;
-  position: relative;
+  position: absolute;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
   width: 200px;
   height: 720px;
 }
@@ -19,14 +25,95 @@ body {
 }
 
 img {
-  width: 1500px;
+  position: absolute;
+  width: 200px;
 }
 
-.logo {
+.nav-logo {
   width: 117px;
   position: absolute;
- left: 16%;
- right: 25.33%;
- top: 4.44%;
- bottom: 91.11%;
+  left: 16%;
+  right: 25.33%;
+  top: 4.44%;
+  bottom: 91.11%;
 }
+.nav-icon{
+  position: absolute;
+  left: 18%;
+  bottom: 85.00%;
+  width: 20px;
+  height: 20px;
+}
+
+.nav-button{
+  position: absolute;
+  left: 35%;
+  bottom: 84.80%;
+  background-color: black;
+  color: #FFFFFF;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+}
+
+.search-icon{
+  position: absolute;
+  left: 18%;
+  bottom: 78.80%;
+  width: 20px;
+  height: 20px;
+}
+
+.search-button{
+  position: absolute;
+  left: 35%;
+  bottom: 78.80%;
+  background-color: black;
+  color: var(--light-gray);
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+}
+
+.main-header{
+color: #FFFFFF;
+position: absolute;
+width: 61px;
+height: 29px;
+left: 232px;
+top: 15px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+padding: 0;
+
+}
+
+.card{
+  position: absolute;
+  width: 944px;
+  height: 534px;
+  left: 232px;
+  top: 77px;
+  }
+
+
+.article{
+display: flex;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+width: 224px;
+height: 259px;
+left: 232px;
+top: 77px;
+background: #242424;
+border-radius: 8px;
+}
+

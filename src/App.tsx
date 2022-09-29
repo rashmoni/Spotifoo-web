@@ -1,25 +1,36 @@
-// Node modules
-import { useState } from "react";
-
-// Project files
+import React from "react";
+import Navbar from "./components/Navbar"
 import Card from "./components/Card";
 import Countries from "./data/countries.json";
-import Logo from "./assets/logo-spotifoo.png";
-import LoginForm from "./components/LoginForm";
-import "./styles/style.css";
 
 export default function App() {
 
 
+  // Local state
+  const [greetings, setGreetings] = React.useState(Countries);
+  const [counter, setCounter] = React.useState(0);
 
+  // Components
+  const Cards = greetings.map((item) => (
+    <Card
+      key={item.id}
+      title={item.title}
+      text={item.text}
+      imageURL={item.imageURL}
+    />
+  ));
 
   return (
     <div>
-    <nav className="nav-bar">
-    <img className="logo" src={Logo} />
-    </nav>
-    <p>Hello World</p>
-    <p>This is Rashmoni</p>
+      <div className="main-body">
+        <Navbar/>
+      </div>
+      <h2 className="main-header">
+        Artist
+      </h2>
+      <div className="card">
+        {Cards}
+        </div>
     </div>
   );
 }

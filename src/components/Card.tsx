@@ -1,16 +1,23 @@
+import React from "react";
 
 interface iProps {
   title: string;
   text: string;
-  imageURL: string;
+  pathToAlbum?: string;
 }
 
-export default function Card({ title, text, imageURL }: iProps) {
+export default function Card({ title, text, pathToAlbum }: iProps) {
+
+  if (pathToAlbum === undefined) {
+    pathToAlbum= "/assets/picture-no-album.png"
+}
+
   return (
-    <article className="article">
-      <h3>{title}</h3>
-      <p>{text}</p>
-      <img src={imageURL} />
+
+    <article className="card-box">
+      <img src={pathToAlbum} className="card-box card-image"/>
+      <h3 className="card-box card-title">{title}</h3>
     </article>
+
   );
 }

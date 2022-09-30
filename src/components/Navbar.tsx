@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../assets/logo-spotifoo.png";
-import "../styles/style.css";
 import navHomeIcon from "../assets/icons/home.svg"
 import searchIcon from "../assets/icons/search.svg"
 

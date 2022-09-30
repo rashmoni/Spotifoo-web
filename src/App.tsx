@@ -1,36 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar"
 import Card from "./components/Card";
-import Countries from "./data/countries.json";
+import Music from "./data/music.json";
+import "./styles/style.css";
+import DataFetching from "./DataFetching";
 
 export default function App() {
 
-
-  // Local state
-  const [greetings, setGreetings] = React.useState(Countries);
-  const [counter, setCounter] = React.useState(0);
+  const [musics, setMusics] = React.useState(Music);
 
   // Components
-  const Cards = greetings.map((item) => (
+  const Cards = musics.map((item) => (
     <Card
       key={item.id}
       title={item.title}
-      text={item.text}
-      imageURL={item.imageURL}
+      text={item.album}
+      pathToAlbum={item.pathToAlbum}
     />
   ));
 
   return (
-    <div>
-      <div className="main-body">
-        <Navbar/>
-      </div>
-      <h2 className="main-header">
+    <div className="page">
+    <Navbar/>
+    <section>
+    <h2 className="main-header">
         Artist
-      </h2>
-      <div className="card">
-        {Cards}
-        </div>
+       
+    </h2>
+    <div className="card-article-container">
+    {Cards}
+    </div>
+    
+    </section>
+
+    <DataFetching/>
+
     </div>
   );
 }

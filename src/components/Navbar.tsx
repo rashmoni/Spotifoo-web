@@ -4,7 +4,7 @@ import navHomeIcon from "../assets/icons/home.svg"
 import searchIcon from "../assets/icons/search.svg"
 
 
-const Navbar = () => {
+export default function Navbar() {
     return (
         <div>
         <nav className="nav-bar">
@@ -18,4 +18,3 @@ const Navbar = () => {
     );
   }
 
-  export default Navbar;

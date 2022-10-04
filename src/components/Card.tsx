@@ -2,11 +2,10 @@ import React from "react";
 
 interface iProps {
   title: string;
-  text: string;
   pathToAlbum?: string;
 }
 
-export default function Card({ title, text, pathToAlbum }: iProps) {
+export default function Card({ title, pathToAlbum }: iProps) {
 
   if (pathToAlbum === undefined) {
     pathToAlbum= "/images/picture-no-album.png"

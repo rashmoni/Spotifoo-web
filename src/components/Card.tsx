@@ -9,7 +9,7 @@ interface iProps {
 export default function Card({ title, text, pathToAlbum }: iProps) {
 
   if (pathToAlbum === undefined) {
-    pathToAlbum= "/assets/picture-no-album.png"
+    pathToAlbum= "/images/picture-no-album.png"
 }
 
   return (

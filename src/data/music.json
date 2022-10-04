@@ -6,7 +6,7 @@
        "album":"Hot fuss",
        "genre":"rock",
        "pathToMusic":"/music/andy-you-are-a-star.mp3",
-       "pathToAlbum":"/public/images/hot-fuss.png" 
+       "pathToAlbum":"/images/hot-fuss.png" 
     },
     {
        "id":2,

@@ -9,6 +9,15 @@ export default function App() {
 
   const [musics, setMusics] = React.useState(Music);
 
+  const [music, setMusic] = useState([])
+
+
+useEffect(() => {
+  fetch('http://localhost:8080/music/')
+  .then(res => res.json())
+  .then(data => setMusic(data))
+},[]);
+
   // Components
   const Cards = musics.map((item) => (
     <Card
@@ -23,18 +32,17 @@ export default function App() {
     <div className="page">
     <Navbar/>
     <section>
+
     <h2 className="main-header">
-        Artist
-       
+        Artist  
     </h2>
+
     <div className="card-article-container">
     {Cards}
     </div>
     
     </section>
-
-    <DataFetching/>
-
+    <pre>{JSON.stringify(music,null,2)}</pre>
     </div>
   );
 }

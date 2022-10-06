@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Spotifoo Web
+Frontend Project 4
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Table of contents
+* [Introduction](#introduction)
+* [Technologies](#technologies)
+* [Documents](#documents)
+* [Run](#run)
 
-In the project directory, you can run:
 
-### `npm start`
+# Introduction
+Spotifoo Web is a web based music player application. It connects with the backend REST API server to get library of available music and display it to the user.
+The App plays music inside the browser, user can select various music that are available.
+They can also filter music using album, genres and artists and also search using a universal search functionality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies
+Project is created with:
+* node 16.11.62 Version
+* React 18.0.21 version
+* TypeScript 4.8.4 version
 
-### `npm test`
+## Project mamnagement Documents
+Project Management Documents:
+- [Architecture Diagram](https://github.com/rashmoni/abc/)
+- [UseCase Diagram](https://github.com/rashmoni/abc)
+- [Product Backlog](https://github.com/rashmoni/abc)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Run
+To run this application do the following steps.
+1. git clone https://github.com/rashmoni/spotifoo-web.git
+2. cd spotifoo-web
+3. npm run install
+4. npm start
+¨
+## Folder structure -
+/spotifoo-web
+- src/public/images
+- src/public/music
+- src/assets
+- src/components
+- src/styles

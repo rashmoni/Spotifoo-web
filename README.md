@@ -34,7 +34,8 @@ To run this application do the following steps.
 3. cd spotifoo-web
 4. npm run install
 5. npm start
-¨
+
+
 ## Folder structure -
 /spotifoo-web
 - src/public/images

@@ -23,16 +23,17 @@ Project is created with:
 
 ## Project mamnagement Documents
 Project Management Documents:
-- [Architecture Diagram](https://github.com/rashmoni/abc/)
-- [UseCase Diagram](https://github.com/rashmoni/abc)
-- [Product Backlog](https://github.com/rashmoni/abc)
+- [Architecture Diagram](https://github.com/rashmoni/Spotifoo-web/blob/main/ProjectManagement/spotifoo-architecture.pdf)
+- [UseCase Diagram](https://github.com/rashmoni/Spotifoo-web/blob/main/ProjectManagement/UseCaseDiagram.pdf)
+- [Product Backlog](https://github.com/rashmoni/Spotifoo-web/blob/main/ProjectManagement/Product%20Backlog-Spotifoo.xlsx)
 
 ## Run
 To run this application do the following steps.
-1. git clone https://github.com/rashmoni/spotifoo-web.git
-2. cd spotifoo-web
-3. npm run install
-4. npm start
+1. Make sure that SpotifooServer is up and running on localhost:8080
+2. git clone https://github.com/rashmoni/spotifoo-web.git
+3. cd spotifoo-web
+4. npm run install
+5. npm start
 ¨
 ## Folder structure -
 /spotifoo-web
